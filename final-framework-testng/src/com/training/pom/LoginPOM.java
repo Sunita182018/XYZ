@@ -13,14 +13,23 @@ public class LoginPOM {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id="email")
+	@FindBy(id="input-username")
 	private WebElement userName; 
 	
-	@FindBy(id="pass")
+	@FindBy(id="input-password")
 	private WebElement password;
 	
-	@FindBy(id="send2")
+	@FindBy(xpath="//button[@class='btn btn-primary']")
 	private WebElement loginBtn; 
+	
+	@FindBy(className="parent")
+	private WebElement CategoriesIcone;
+	
+	@FindBy(xpath="//a[contains(text(),'Categories')]")
+	private WebElement Categories;
+	
+	@FindBy(className="btn-danger")
+	private WebElement deleteIcone;
 	
 	public void sendUserName(String userName) {
 		this.userName.clear();
@@ -34,5 +43,14 @@ public class LoginPOM {
 	
 	public void clickLoginBtn() {
 		this.loginBtn.click(); 
+	}
+	
+	public void clickCategories() {
+		this.CategoriesIcone.click();
+		this.Categories.click();
+	}
+	
+	public void clickDelete() {
+		this.deleteIcone.click();
 	}
 }
