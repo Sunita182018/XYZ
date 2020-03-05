@@ -31,6 +31,9 @@ public class LoginPOM {
 	@FindBy(className="btn-danger")
 	private WebElement deleteIcone;
 	
+	@FindBy(className="fa-pencil")
+	private WebElement EditIcone;
+	
 	public void sendUserName(String userName) {
 		this.userName.clear();
 		this.userName.sendKeys(userName);
@@ -52,5 +55,9 @@ public class LoginPOM {
 	
 	public void clickDelete() {
 		this.deleteIcone.click();
+	}
+	
+	public void clickEdit() {
+		this.EditIcone.click();
 	}
 }
