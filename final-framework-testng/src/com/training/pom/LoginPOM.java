@@ -34,6 +34,12 @@ public class LoginPOM {
 	@FindBy(className="fa-pencil")
 	private WebElement EditIcone;
 	
+	@FindBy(linkText="Products")
+	private WebElement Product;
+	
+	@FindBy(className="fa-plus")
+	private WebElement AddProductIcone;
+	
 	public void sendUserName(String userName) {
 		this.userName.clear();
 		this.userName.sendKeys(userName);
@@ -60,4 +66,14 @@ public class LoginPOM {
 	public void clickEdit() {
 		this.EditIcone.click();
 	}
+	
+	public void clickProduct() {
+		this.CategoriesIcone.click();
+		this.Product.click();
+	}
+	
+	public void AddProduct() {
+		this.AddProductIcone.click();
+	}
+	
 }

@@ -5,8 +5,8 @@
     <classes>
       <class name="com.training.sanity.tests.MediumUniformTests">
         <methods>
-          <include name="EditDeleteCategoryTest"/>
           <include name="setUpBeforeClass"/>
+          <include name="FilterProductTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.training.sanity.tests.MediumUniformTests -->

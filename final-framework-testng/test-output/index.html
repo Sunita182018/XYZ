@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content passed suite-Sample_test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sample_test_Suite" title="com.training.sanity.tests.MediumUniformTests" class="method navigator-link" hash-for-method="AddProductTest">AddProductTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Sample_test_Suite" title="com.training.sanity.tests.MediumUniformTests" class="method navigator-link" hash-for-method="EditDeleteCategoryTest">EditDeleteCategoryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sample_test_Suite" title="com.training.sanity.tests.MediumUniformTests" class="method navigator-link" hash-for-method="FilterProductTest">FilterProductTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -130,9 +140,23 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="AddProductTest">
+                  </a> <!-- AddProductTest -->
+                  <span class="method-name">AddProductTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="EditDeleteCategoryTest">
                   </a> <!-- EditDeleteCategoryTest -->
                   <span class="method-name">EditDeleteCategoryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FilterProductTest">
+                  </a> <!-- FilterProductTest -->
+                  <span class="method-name">FilterProductTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -196,20 +220,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'EditDeleteCategoryTest')
+data.setCell(0, 1, 'FilterProductTest')
 data.setCell(0, 2, 'com.training.sanity.tests.MediumUniformTests')
-data.setCell(0, 3, 6619);
+data.setCell(0, 3, 6993);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validLoginTest')
+data.setCell(1, 1, 'EditDeleteCategoryTest')
 data.setCell(1, 2, 'com.training.sanity.tests.MediumUniformTests')
-data.setCell(1, 3, 1730);
+data.setCell(1, 3, 5525);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'AddProductTest')
+data.setCell(2, 2, 'com.training.sanity.tests.MediumUniformTests')
+data.setCell(2, 3, 3886);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validLoginTest')
+data.setCell(3, 2, 'com.training.sanity.tests.MediumUniformTests')
+data.setCell(3, 3, 1692);
 window.suiteTableData['Sample_test_Suite']= { tableData: data, tableDiv: 'times-div-Sample_test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Sample_test_Suite">
               </div> <!-- times-div-Sample_test_Suite -->
             </div> <!-- times-div -->
@@ -242,15 +274,23 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validLoginTest</span>
-                <span class="method-start">12962 ms</span>
+                <span class="method-start">12909 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">EditDeleteCategoryTest</span>
-                <span class="method-start">14705 ms</span>
+                <span class="method-start">14609 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FilterProductTest</span>
+                <span class="method-start">20136 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddProductTest</span>
+                <span class="method-start">27131 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21326 ms</span>
+                <span class="method-start">31019 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
