@@ -185,7 +185,7 @@ public class MediumUniformTests {
 				"×");
 	
 		screenShot.captureScreenShot("SixthTest-M");
-		
+	
 	}
 	
 
