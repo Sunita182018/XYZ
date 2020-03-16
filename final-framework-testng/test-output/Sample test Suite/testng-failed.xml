@@ -3,13 +3,14 @@
 <suite name="Failed suite [Sample test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Sample test(failed)">
     <classes>
-      <class name="com.training.sanity.tests.MediumUniformTests">
+      <class name="com.training.sanity.tests.ComplexUniformTests">
         <methods>
-          <include name="setUpBeforeClass"/>
-          <include name="FilterProductTest"/>
+          <include name="productRewardsPointTest_UNF_071"/>
           <include name="tearDown"/>
+          <include name="shopUniformsTest_UNF_070"/>
+          <include name="setUpBeforeClass"/>
         </methods>
-      </class> <!-- com.training.sanity.tests.MediumUniformTests -->
+      </class> <!-- com.training.sanity.tests.ComplexUniformTests -->
     </classes>
   </test> <!-- Sample test(failed) -->
 </suite> <!-- Failed suite [Sample test Suite] -->
