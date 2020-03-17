@@ -5,9 +5,8 @@
     <classes>
       <class name="com.training.sanity.tests.ComplexUniformTests">
         <methods>
-          <include name="productRewardsPointTest_UNF_071"/>
+          <include name="productRewardsPointTest_UNF_072" invocation-numbers="3"/>
           <include name="tearDown"/>
-          <include name="shopUniformsTest_UNF_070"/>
           <include name="setUpBeforeClass"/>
         </methods>
       </class> <!-- com.training.sanity.tests.ComplexUniformTests -->

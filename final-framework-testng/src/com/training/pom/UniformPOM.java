@@ -179,5 +179,81 @@ public class UniformPOM {
 	public void clickAddHistory() {
 		this.addHistory.click();	
 	}
+	
+	@FindBy(id="input-category")
+	private WebElement Categories;
+	
+	public void clickLinksCategories(String Category) {
+		this.Categories.click();
+		this.Categories.sendKeys(Category);
+	}
+	
+	@FindBy(xpath="//div[@id='tab-links']//li[1]")
+	private WebElement selectedCategories;
+	
+	public void selectCategories() {
+		this.selectedCategories.click();
+	}
+	
+	@FindBy(linkText="Discount")
+	private WebElement DiscountTab;
+	
+	public void clickDiscount() {
+		this.DiscountTab.click();
+	}
+	
+	@FindBy(name="product_discount[0][quantity]")
+	private WebElement QuantOnDiscount;
+	
+	public void sendDiscountQuantity(String Quantity) {
+		this.QuantOnDiscount.clear(); 
+		this.QuantOnDiscount.sendKeys(Quantity); 
+	}
+	
+	@FindBy(xpath="//table[@id='discount']//button[@class='btn btn-primary']")
+	private WebElement AddDiscount;
+	
+	public void clickAddDiscountIcon() {
+		this.AddDiscount.click();
+	}
+			
+	@FindBy(name="product_discount[0][price]")
+	private WebElement PriceOnDiscount;
+	
+	public void sendDiscountPrice(String Price) {
+		this.PriceOnDiscount.clear(); 
+		this.PriceOnDiscount.sendKeys(Price); 
+	}
+	
+	@FindBy(xpath="//td[5]//div[1]//span[1]//button[1]//i[1]")
+	private WebElement StartDateDiscount;
+	
+	public void setStartDate() {
+		this.StartDateDiscount.click(); 
+		this.StartDateDiscount.click(); 
+	}
+	
+	@FindBy(xpath="//td[6]//div[1]//span[1]//button[1]//i[1]")
+	private WebElement EndDateDiscount;
+	
+	public void setEndDate() {
+		this.EndDateDiscount.click(); 
+		this.EndDateDiscount.click();
+	}
+	
+	@FindBy(linkText="Reward Points")
+	private WebElement RewardPointsTab;
+	
+	public void clickRewardPoints() {
+		this.RewardPointsTab.click();
+	}
+	
+	@FindBy(name="points")
+	private WebElement PointsReward;
+	
+	public void sendRewardPoints(String Points) {
+		this.PointsReward.clear(); 
+		this.PointsReward.sendKeys(Points); 
+	}
 }
 

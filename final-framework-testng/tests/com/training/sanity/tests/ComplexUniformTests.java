@@ -16,8 +16,10 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.training.dataproviders.LoginDataProviders;
 import com.training.generics.ScreenShot;
 import com.training.pom.HomePOM;
 import com.training.pom.LoginPOM;
@@ -56,12 +58,12 @@ public class ComplexUniformTests {
 
 	@AfterTest
 	public void tearDown() throws Exception {
-		Thread.sleep(1000);
-		driver.quit();
+		//Thread.sleep(1000);
+		//driver.quit();
 	}
 	
 	
-	@Test (priority=10)
+	@Test (priority=10,enabled=false)
 	public void validLoginTest(){
 		
 		uniformPOM.clickUserIcone();
@@ -72,7 +74,7 @@ public class ComplexUniformTests {
 
 	}
 	
-	@Test (priority=20)
+	@Test (priority=20,enabled=false)
 	public void shopUniformsTest_UNF_070() throws Exception{
 			
 		uniformPOM.clickUniformStore();
@@ -139,18 +141,63 @@ public class ComplexUniformTests {
 		
 		screenShot.captureScreenShot("Seventh-C");
 	}
+	
 
-	@Test (priority=30)
-	public void productRewardsPointTest_UNF_071() {
+	@Test (priority=30,dataProvider = "excel-inputs", dataProviderClass = LoginDataProviders.class)
+	public void productRewardsPointTest_UNF_072(String ProdName,String MetaTitle,String Model,String Price,String Category,String Quantity,String Price2,String Points) throws Exception {
+		
+		
+		//temp code
+		driver.get(properties.getProperty("baseURL"));
+		loginPOM.sendUserName("admin");
+		loginPOM.sendPassword("admin@123");
+		loginPOM.clickLoginBtn(); 
+		uniformPOM.clicksaleIcon();
+		
 		
 		loginPOM.clickProduct();
 		assertEquals(driver.getTitle(),"Products");
 		
 		loginPOM.AddProduct();
 		assertEquals(driver.findElement(By.className("panel-title")).getText(),"Add Product");
+		
+		productPOM.sendProductName(ProdName);
+		productPOM.sendMetaTagTitle(MetaTitle);
+		
+		productPOM.clickData();
+		
+		productPOM.sendModel(Model);
+		productPOM.sendPrice(Price);
+		productPOM.sendQuantity(Quantity);
+		
+		productPOM.clickLinks();
+		
+		uniformPOM.clickLinksCategories(Category);
+		
+		uniformPOM.selectCategories();
+		
+		uniformPOM.clickDiscount();
+		uniformPOM.clickAddDiscountIcon();
+		Thread.sleep(1000);
+		uniformPOM.sendDiscountQuantity(Quantity);
+		Thread.sleep(1000);
+		uniformPOM.sendDiscountPrice(Price2);
+		Thread.sleep(1000);
+		uniformPOM.setStartDate();
+
+		uniformPOM.setEndDate();
+		uniformPOM.clickRewardPoints();
+		uniformPOM.sendRewardPoints(Points);
+		
+		productPOM.clickSave();
+		
+		String SaveMsg = driver.findElement(By.className("alert-success")).getText();
+		assertEquals(SaveMsg,"Success: You have modified products!\n" + 
+				"×");
+	
+		screenShot.captureScreenShot("EightTest-C");
 	}
 	
 	
-
 	
 }

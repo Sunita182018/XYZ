@@ -1,29 +1,274 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="2" total="6" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-13T16:11:57 IST" name="Sample test Suite" finished-at="2020-03-13T16:12:42 IST" duration-ms="45765">
+  <suite started-at="2020-03-17T10:31:38 IST" name="Sample test Suite" finished-at="2020-03-17T10:33:01 IST" duration-ms="82941">
     <groups>
     </groups>
-    <test started-at="2020-03-13T16:11:57 IST" name="Sample test" finished-at="2020-03-13T16:12:42 IST" duration-ms="45765">
+    <test started-at="2020-03-17T10:31:38 IST" name="Sample test" finished-at="2020-03-17T10:33:01 IST" duration-ms="82941">
       <class name="com.training.sanity.tests.ComplexUniformTests">
-        <test-method is-config="true" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.ComplexUniformTests@75f32542]" started-at="2020-03-13T16:11:57 IST" name="setUpBeforeClass" finished-at="2020-03-13T16:12:10 IST" duration-ms="13488" status="PASS">
+        <test-method is-config="true" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.ComplexUniformTests@7f1302d6]" started-at="2020-03-17T10:31:38 IST" name="setUpBeforeClass" finished-at="2020-03-17T10:31:52 IST" duration-ms="13993" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method signature="validLoginTest()[pri:10, instance:com.training.sanity.tests.ComplexUniformTests@75f32542]" started-at="2020-03-13T16:12:10 IST" name="validLoginTest" finished-at="2020-03-13T16:12:14 IST" duration-ms="3431" status="PASS">
+        <test-method signature="productRewardsPointTest_UNF_072(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:30, instance:com.training.sanity.tests.ComplexUniformTests@7f1302d6]" started-at="2020-03-17T10:31:53 IST" name="productRewardsPointTest_UNF_072" data-provider="excel-inputs" finished-at="2020-03-17T10:32:07 IST" duration-ms="13587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Brown T shirt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[T shirt]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[RTS-012]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1500.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Sports]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[800.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method signature="shopUniformsTest_UNF_070()[pri:20, instance:com.training.sanity.tests.ComplexUniformTests@75f32542]" started-at="2020-03-13T16:12:14 IST" name="shopUniformsTest_UNF_070" finished-at="2020-03-13T16:12:39 IST" duration-ms="25162" status="PASS">
+        </test-method> <!-- productRewardsPointTest_UNF_072 -->
+        <test-method signature="productRewardsPointTest_UNF_072(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:30, instance:com.training.sanity.tests.ComplexUniformTests@7f1302d6]" started-at="2020-03-17T10:32:07 IST" name="productRewardsPointTest_UNF_072" data-provider="excel-inputs" finished-at="2020-03-17T10:32:17 IST" duration-ms="10040" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Blazer Girls(II-V)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Blazer]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Blz-014]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3000.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Formal wear]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2000.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[8.0]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shopUniformsTest_UNF_070 -->
-        <test-method signature="productRewardsPointTest_UNF_071()[pri:30, instance:com.training.sanity.tests.ComplexUniformTests@75f32542]" started-at="2020-03-13T16:12:39 IST" name="productRewardsPointTest_UNF_071" finished-at="2020-03-13T16:12:41 IST" duration-ms="1796" status="PASS">
+        </test-method> <!-- productRewardsPointTest_UNF_072 -->
+        <test-method signature="productRewardsPointTest_UNF_072(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:30, instance:com.training.sanity.tests.ComplexUniformTests@7f1302d6]" started-at="2020-03-17T10:32:17 IST" name="productRewardsPointTest_UNF_072" data-provider="excel-inputs" finished-at="2020-03-17T10:32:27 IST" duration-ms="10048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[White Socks]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[socks]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Soc-143]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Sports]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- productRewardsPointTest_UNF_071 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.training.sanity.tests.ComplexUniformTests@75f32542]" started-at="2020-03-13T16:12:41 IST" name="tearDown" finished-at="2020-03-13T16:12:42 IST" duration-ms="1796" status="PASS">
+        </test-method> <!-- productRewardsPointTest_UNF_072 -->
+        <test-method signature="productRewardsPointTest_UNF_072(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:30, instance:com.training.sanity.tests.ComplexUniformTests@7f1302d6]" started-at="2020-03-17T10:32:27 IST" name="productRewardsPointTest_UNF_072" data-provider="excel-inputs" finished-at="2020-03-17T10:33:01 IST" duration-ms="34251" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[White Shirt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[shirt]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SHI-201]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[500.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Shirts]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[6.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[700.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[14.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='tab-links']//li[1]"}
+  (Session info: chrome=80.0.3987.132)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-8FM2397', ip: '192.168.0.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=C:\Users\SUNITA~1\AppData\Local\Temp\scoped_dir8276_481907140}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:55750}, acceptInsecureCerts=false, browserVersion=80.0.3987.132, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true}]
+Session ID: 3c90d70bc2516318140b844189e65184
+*** Element info: {Using=xpath, value=//div[@id='tab-links']//li[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='tab-links']//li[1]"}
+  (Session info: chrome=80.0.3987.132)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-8FM2397', ip: '192.168.0.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=C:\Users\SUNITA~1\AppData\Local\Temp\scoped_dir8276_481907140}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:55750}, acceptInsecureCerts=false, browserVersion=80.0.3987.132, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true}]
+Session ID: 3c90d70bc2516318140b844189e65184
+*** Element info: {Using=xpath, value=//div[@id='tab-links']//li[1]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at com.training.pom.UniformPOM.selectCategories(UniformPOM.java:195)
+at com.training.sanity.tests.ComplexUniformTests.productRewardsPointTest_UNF_072(ComplexUniformTests.java:177)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productRewardsPointTest_UNF_072 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.training.sanity.tests.ComplexUniformTests@7f1302d6]" started-at="2020-03-17T10:33:01 IST" name="tearDown" finished-at="2020-03-17T10:33:01 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
