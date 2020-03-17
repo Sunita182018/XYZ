@@ -144,6 +144,60 @@ public class ComplexUniformTests {
 	
 
 	@Test (priority=30,dataProvider = "excel-inputs", dataProviderClass = LoginDataProviders.class)
+	public void productRewardsPointTest_UNF_071(String ProdName,String MetaTitle,String Model,String Price,String Category,String Quantity,String Price2,String Points) throws Exception {
+		
+		
+		//temp code
+		driver.get(properties.getProperty("baseURL"));
+		loginPOM.sendUserName("admin");
+		loginPOM.sendPassword("admin@123");
+		loginPOM.clickLoginBtn(); 
+		uniformPOM.clicksaleIcon();
+		
+		
+		loginPOM.clickProduct();
+		assertEquals(driver.getTitle(),"Products");
+		
+		loginPOM.AddProduct();
+		assertEquals(driver.findElement(By.className("panel-title")).getText(),"Add Product");
+		
+		productPOM.sendProductName(ProdName);
+		productPOM.sendMetaTagTitle(MetaTitle);
+		
+		productPOM.clickData();
+		
+		productPOM.sendModel(Model);
+		productPOM.sendPrice(Price);
+		productPOM.sendQuantity(Quantity);
+		
+		productPOM.clickLinks();
+		
+		uniformPOM.clickLinksCategories(Category);
+		
+		uniformPOM.selectCategories();
+		
+		uniformPOM.clickDiscount();
+		uniformPOM.clickAddDiscountIcon();
+		Thread.sleep(1000);
+		uniformPOM.sendDiscountQuantity(Quantity);
+		Thread.sleep(1000);
+		uniformPOM.sendDiscountPrice(Price2);
+		Thread.sleep(1000);
+		uniformPOM.setStartDate();
+		uniformPOM.setEndDate();
+		uniformPOM.clickRewardPoints();
+		uniformPOM.sendRewardPoints(Points);
+		
+		productPOM.clickSave();
+		
+		String SaveMsg = driver.findElement(By.className("alert-success")).getText();
+		assertEquals(SaveMsg,"Success: You have modified products!\n" + 
+				"×");
+	
+		screenShot.captureScreenShot("EightTest-C");
+	}
+	
+	@Test (priority=40,enabled=false,dataProvider = "excel-inputs2", dataProviderClass = LoginDataProviders.class)
 	public void productRewardsPointTest_UNF_072(String ProdName,String MetaTitle,String Model,String Price,String Category,String Quantity,String Price2,String Points) throws Exception {
 		
 		
@@ -195,9 +249,9 @@ public class ComplexUniformTests {
 		assertEquals(SaveMsg,"Success: You have modified products!\n" + 
 				"×");
 	
-		screenShot.captureScreenShot("EightTest-C");
+		screenShot.captureScreenShot("NineTest-C");
 	}
 	
-	
+
 	
 }
