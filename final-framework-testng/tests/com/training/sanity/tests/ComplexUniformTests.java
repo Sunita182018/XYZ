@@ -58,12 +58,12 @@ public class ComplexUniformTests {
 
 	@AfterTest
 	public void tearDown() throws Exception {
-		//Thread.sleep(1000);
-		//driver.quit();
+		Thread.sleep(1000);
+		driver.quit();
 	}
 	
 	
-	@Test (priority=10,enabled=false)
+	@Test (priority=10,enabled=true)
 	public void validLoginTest(){
 		
 		uniformPOM.clickUserIcone();
@@ -74,7 +74,7 @@ public class ComplexUniformTests {
 
 	}
 	
-	@Test (priority=20,enabled=false)
+	@Test (priority=20,enabled=true)
 	public void shopUniformsTest_UNF_070() throws Exception{
 			
 		uniformPOM.clickUniformStore();
@@ -143,11 +143,10 @@ public class ComplexUniformTests {
 	}
 	
 
-	@Test (priority=30,dataProvider = "excel-inputs", dataProviderClass = LoginDataProviders.class)
+	@Test (priority=30,enabled=true,dataProvider = "excel-inputs", dataProviderClass = LoginDataProviders.class)
 	public void productRewardsPointTest_UNF_071(String ProdName,String MetaTitle,String Model,String Price,String Category,String Quantity,String Price2,String Points) throws Exception {
 		
 		
-		//temp code
 		driver.get(properties.getProperty("baseURL"));
 		loginPOM.sendUserName("admin");
 		loginPOM.sendPassword("admin@123");
@@ -201,7 +200,6 @@ public class ComplexUniformTests {
 	public void productRewardsPointTest_UNF_072(String ProdName,String MetaTitle,String Model,String Price,String Category,String Quantity,String Price2,String Points) throws Exception {
 		
 		
-		//temp code
 		driver.get(properties.getProperty("baseURL"));
 		loginPOM.sendUserName("admin");
 		loginPOM.sendPassword("admin@123");
